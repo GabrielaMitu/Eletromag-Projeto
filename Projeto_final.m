@@ -1,5 +1,5 @@
+close all;
 clear all;
-%close all;
 
 % 1 Modelando Antena
 ri = .4;
@@ -112,10 +112,10 @@ figure(9);
 plot(freq, imag(Z));
 imag(Z);
 grid();
-ylim([-100,100])
+ylim([-100,100]);
+
 xlabel('Frequência [Hz]');
 ylabel('Impedância [ohms]');
-hold on
 
 M = 1/(6.2*1e6);
 Rc = 1;
@@ -128,12 +128,11 @@ for m = 1:length(M_s)
     s_G(m,1) = G;
 end
 
-plot(M_s, s_G);
-grid();
-
+hold on
 figure(10);
+plot(M_s, s_G);
 xlabel('M');
 ylabel('Ganho');
-
+grid
 
 
