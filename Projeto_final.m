@@ -117,7 +117,7 @@ ylim([-100,100]);
 xlabel('Frequência [Hz]');
 ylabel('Impedância [ohms]');
 
-M = 1/(6.2*1e6);
+M = 1/wC;
 Rc = 1;
 
 M_s = linspace(M, 0.1*1e-7, 200);
