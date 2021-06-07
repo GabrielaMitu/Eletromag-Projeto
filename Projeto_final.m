@@ -7,7 +7,7 @@ re = .5;
 
 nVoltas = 6;
 antena = spiralArchimedean('NumArms', 1, 'Turns', nVoltas, 'InnerRadius', ri, 'OuterRadius', re, 'Tilt', 90, 'TiltAxis', 'Y');
-freq = linspace(10e5, 10e6, 100);
+freq = linspace(1000000, 10000000, 200);
 
 figure(1);
 show(antena);
