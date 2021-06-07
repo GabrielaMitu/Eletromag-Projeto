@@ -99,13 +99,13 @@ grid
 
 % 8 Unindo dois modelos
 sigma = 20;
-wC = 6.2*1e6;
+wC = 5.2*1e6;
 L = sigma/wC;
 C = 1/(sigma*wC);
 Z = zeros(length(freq), 1);
 
 for m = 1:length(freq)
-    Z(m)= 1i*freq(m)*L*1/(1i*freq(m)*C)/((1i*freq(m)*L)+(1/(1i*freq(m)*C))) + 12*1i*freq(m)*L;
+    Z(m)= 1i*freq(m)*L*1/(1i*freq(m)*C)/((1i*freq(m)*L)+(1/(1i*freq(m)*C))) + 2*1i*freq(m)*L;
 end
 
 figure(9);
