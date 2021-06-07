@@ -43,12 +43,13 @@ grid
 
 % 4 Simulando acoplamento
 sparam = sparameters(dipole_array, freq);
+sparam;
 
 % -----------------------------------
 
 % 5 Visualizando os ganhos
 %figure(4);
-%rfplot(sparam, 2, 1, 'abs');
+rfplot(sparam, 2, 1, 'abs');
 %xlim(6,6.5);
 %grid
 
